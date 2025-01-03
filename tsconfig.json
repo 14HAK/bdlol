@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Modern JavaScript version support
+    "module": "CommonJS", // Enables ES module syntax
+    "moduleResolution": "Node", // TypeScript to use Node's resolution algorithm
+    "strict": true, // Enables strict mode
+    "esModuleInterop": true, // Better compatibility with CommonJS modules
+    "skipLibCheck": true, // Speeds up compilation by skipping checks of library files
+    "forceConsistentCasingInFileNames": true, // Enforces case sensitivity
+    "outDir": "./dist", // Compiles to the `dist` directory
+    "rootDir": "./src", // Source files are in the `src` directory
+    "allowSyntheticDefaultImports": true, // Allows default imports for CommonJS
+    "resolveJsonModule": true // Allows importing JSON files
+  },
+  // Includes all .ts files in the `src` directory
+  "include": ["src/**/*.ts", "src/tests/**/*.ts", "src/server.ts", "src/**/*"],
+  "exclude": ["node_modules"] // Excludes `node_modules` folder
+}
